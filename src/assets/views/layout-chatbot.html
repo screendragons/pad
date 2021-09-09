@@ -1,0 +1,94 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--    <head>-->
+<!--        <meta charset="UTF-8">-->
+<!--        <title>OBA - Chatbot</title>-->
+<!--        &lt;!&ndash;Fonts, Jquery&ndash;&gt;-->
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<!--        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>-->
+<!--        <script src="https://kit.fontawesome.com/c2fcaf8c1b.js" crossorigin="anonymous"></script>-->
+
+<!--        &lt;!&ndash;Css stylesheets&ndash;&gt;-->
+<!--        <link rel="stylesheet" href="../css/chatbot-button.css"/>-->
+<!--        <link rel="stylesheet" href="../css/chatbot-content.css"/>-->
+<!--        <link rel="stylesheet" href="../css/chatbot-menu-opties.css"/>-->
+<!--        <link rel="stylesheet" href="../css/message.css"/>-->
+
+<!--    </head>-->
+<!--    <body>-->
+        <!--Button for opening the chatbot-->
+        <div class="chatbot_button" id="btn" onclick="chatbotButtonClick()">
+            <img class="chatbot_button_img" src="../img/Boek.png" alt="chatbot button">
+        </div>
+
+        <!--Container for the whole chatbot-->
+        <div class="main_container" id="chatbot">
+            <div class="container">
+                <!--Chatbot header for the bot information and menu options-->
+                <div class="container_header">
+                    <button class="close_button">
+                        <img class="close_icon" src="../img/pijl.png" alt="sluiten">
+                    </button>
+                    <p class="chat_title">
+                        <span class="text_header">Chatbot</span>
+                        <span class="text_header">Chatbot NAME</span>
+                        <span class="chat_status">Altijd online</span>
+                    </p>
+
+                    <!--Menu options-->
+                    <div class="chat_options">
+                        <button class="toggle_menu" onclick="menuButtonClick()">
+                            <img class="menu_icon" src="../img/buttons.png" alt="menu opties">
+                        </button>
+                        <ul id="menu" class="menu">
+                            <li class="items" onclick="chatbotButtonClick()">
+                                <i class="fa fa-minus icon-color"></i>
+                                Gesprek minimaliseren
+                            </li>
+                            <li class="items">
+                                <i class="fas fa-undo icon-color"></i>
+                                Gesprek opnieuw starten
+                            </li>
+                            <li class="items border-bottom">
+                                <i class="fas fa-times icon-color"></i>
+                                Gesprek afsluiten
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Chatbot body for the chat interaction content-->
+                <div class="container_body">
+                    <!--General question buttons-->
+                    <div id="buttons">
+                        <a href="#" class="chat_general_questions">Alle vestigingen</a>
+                        <a href="#" class="chat_general_questions">Openingstijden</a>
+                        <a href="#" class="chat_general_questions">Boekenlijst</a>
+                        <a href="#" class="chat_general_questions">Alle vestigingen</a>
+                        <a href="#" class="chat_general_questions">Openingstijden</a>
+                        <a href="#" class="chat_general_questions">Boekenlijst</a>
+                    </div>
+                </div>
+
+                <!--Chatbot bottom for the inputs-->
+                <div class="container_bottom">
+                    <form class="form_chat">
+                        <div class="chat_input">
+                            <input class="text_input" type="text" title="Type hier je bericht"
+                                   placeholder="Type hier je vraag of bericht ...">
+                        </div>
+                        <div class="chat_button">
+                            <button id="send" type="button" class="chat_send_message">
+                                <img class="chat_send_message_img" src="../img/PngItem_3795781.png" alt="menu opties">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+<!--    </body>-->
+
+<!--    &lt;!&ndash;Javascript files&ndash;&gt;-->
+<!--    <script src="../js/chatbot-buttons.js"></script>-->
+<!--    <script src="../js/send.js"></script>-->
+<!--</html>-->

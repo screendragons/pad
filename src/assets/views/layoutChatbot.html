@@ -1,0 +1,84 @@
+<!--Button for opening the chatbot-->
+<div class="chatbot_button" id="btn" onclick="chatbotButtonClick()">
+    <img class="chatbot_button_img" src="assets/img/boek.png" alt="chatbot button">
+</div>
+
+<!--Container for the whole chatbot-->
+<div class="main_container" id="chatbot">
+    <div class="container">
+        <!--Chatbot header for the bot information and menu options-->
+        <div class="container_header">
+            <p class="chat_title">
+                <span class="text_header">Chatbot Jackie</span>
+                <span class="chat_status">Altijd online</span>
+            </p>
+
+            <!--Menu options-->
+            <div class="chat_options">
+                <button class="toggle_menu" onclick="openMenu()">
+                    <img class="menu_icon" src="assets/img/buttons.png" alt="menu opties">
+                </button>
+                <ul id="menu" class="menu">
+                    <li class="items" onclick="chatbotButtonClick()">
+                        <i class="fa fa-minus icon-color"></i>
+                        Gesprek minimaliseren
+                    </li>
+                    <li class="items" onclick="refresh()">
+                        <i class="fas fa-undo icon-color"></i>
+                        Gesprek opnieuw starten
+                    </li>
+                    <li class="items border-bottom" onclick="closeChat()">
+                        <i class="fas fa-times icon-color"></i>
+                        Gesprek afsluiten
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Chatbot body for the chat interaction content-->
+        <div class="container_body">
+            <!--General question buttons-->
+            <div id="buttons">
+                <a href="https://www.oba.nl/vestigingen.html" target="_blank" class="chat_general_questions">
+                    Alle vestigingen</a>
+                <a href="https://www.oba.nl/collectie.html" target="_blank"
+                   class="chat_general_questions">Boekenlijst</a>
+                <a href="#" class="chat_general_questions" onclick="loanNumber()">Mijn lenersnummer</a>
+                <a href="#" class="chat_general_questions" onclick="obaOpen()">Is de OBA dicht?</a>
+                <a href="#" class="chat_general_questions" onclick="lossOrDamage()">Verlies of schade?</a>
+            </div>
+
+            <div class="start-message">
+                <div>
+                    <img src="assets/img/jackie.svg" alt="user" class="user-left">
+                </div>
+                <div class="text-box left">
+<!--                    Here is the default message when you start the chatbot-->
+                    <p class="textmessage-left" id="textmessage">
+                        Hallo ik ben de chatbot van de Openbare Bibliotheek van Amsterdam. Stel gerust al je vragen aan
+                        mij!
+                    </p>
+                </div>
+            </div>
+
+            <span id="message"></span>
+            <div class="message"></div>
+
+        </div>
+
+        <!--Chatbot bottom for the inputs-->
+        <div class="container_bottom">
+            <form class="form_chat">
+                <div class="chat_input">
+                    <input class="text_input" type="text" id="voorbeeld" title="Type hier je bericht"
+                           placeholder="Type hier je vraag of bericht ...">
+                </div>
+                <div class="chat_button">
+                    <button id="send" type="button" class="chat_send_message">
+                        <img class="chat_send_message_img" src="assets/img/send.png" alt="menu opties">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

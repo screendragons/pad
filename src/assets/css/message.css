@@ -1,0 +1,92 @@
+.message-right {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    right: 0;
+    position: absolute;
+}
+
+.message-left {
+    margin-top: 80px;
+    display: flex;
+    position: relative;
+}
+
+.container_body {
+    transition-duration: 1s;
+}
+
+.image_books {
+    margin-left: 20px;
+}
+
+.start-message {
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+}
+
+.text-box {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+#grey {
+    background-color: #ccc6c1;
+}
+
+.user-right {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.user-left {
+    height: 50px;
+    width: 50px;
+}
+
+.textmessage-left {
+    text-align: left;
+    padding: 15px;
+}
+
+.textmessage-right {
+    text-align: right;
+    padding: 15px;
+}
+
+.right {
+    margin-right: 20px;
+}
+
+.left {
+    margin-left: 20px;
+}
+
+.serviceYes {
+    float: left;
+    width: 100px;
+    background-color: #73e78a;
+    text-align: center;
+}
+
+.serviceNo {
+    float: right;
+    width: 100px;
+    margin-left: 35px;
+    background-color: #f82941;
+    text-align: center;
+}
+
+.serviceYes:hover {
+    background-color: #97f68c;
+    cursor: pointer;
+}
+
+.serviceNo:hover {
+    background-color: #f37a88;
+    cursor: pointer;
+}

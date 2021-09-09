@@ -1,0 +1,38 @@
+.menu {
+    float: right;
+    position: fixed;
+    display: none;
+    margin-top: 40px;
+    margin-right: 245px;
+}
+
+.items {
+    padding: .5rem 1rem;
+    margin-right: 5rem;
+    border: 1px solid #aaa;
+    border-bottom: none;
+    background-color: #ffffff;
+    width: 100%;
+    float: left;
+    position: relative;
+    color: #000;
+    list-style: none;
+    cursor: pointer;
+}
+
+.items:hover {
+    background-color: #fff8f8;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #aaa;
+}
+
+.icon-color {
+    color: #FE0000;
+}
+
+button.toggle_menu {
+    background-color: #FE0000;
+    border: none;
+}
